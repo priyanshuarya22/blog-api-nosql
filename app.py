@@ -1,7 +1,7 @@
 from fastapi import FastAPI, status, Depends, HTTPException, Query
-from .models import Post, PostCreate, PostPartialUpdate, CommentCreate
+from models import Post, PostCreate, PostPartialUpdate, CommentCreate
 from motor.motor_asyncio import AsyncIOMotorDatabase
-from .database import get_database
+from database import get_database
 from bson import ObjectId, errors
 
 
